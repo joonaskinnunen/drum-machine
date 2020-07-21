@@ -35,6 +35,25 @@
   background-color: grey;
   border-radius: 10px;
   box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+  border: none;
+  outline: none !important;
+}
+
+.drum-pad-power-on {
+  width: 90px;
+  height: 90px;
+  margin: 5px;
+  background-color: grey;
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px 0px rgba(0,0,0,0.75);
+  border: none;
+  outline: none !important;
+}
+
+.drum-pad-power-on:active {
+  background-color: orange;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .controls-container {
@@ -50,20 +69,25 @@
   width: 150px;
   display: flex;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .power-container, .bank-container {
   display: flex;
   margin: auto;
   width: fit-content;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 #display {
-  width: 80%;
-  height: 40px;
+  width: 70%;
+  height: 60px;
   margin: auto;
   background-color: gray;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
+
+h3 {
+  line-height: 60px;
+}
+
