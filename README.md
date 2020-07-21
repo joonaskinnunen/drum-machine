@@ -1,5 +1,9 @@
 Simple drum machine built with react.js
 
+Working demo: [https://drum-machine-react-app.herokuapp.com/](https://drum-machine-react-app.herokuapp.com/)
+
+![Screenshot](drum-machine.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
