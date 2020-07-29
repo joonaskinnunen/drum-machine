@@ -21,6 +21,7 @@
 .drum-pad-container {
   width: 300px;
   height: 100%;
+  margin: auto;
 }
 
 .drum-pad {
@@ -54,6 +55,7 @@
 .controls-container {
   width:300px;
   height: 100%;
+  margin: auto;
 }
 
 .slider {
@@ -86,3 +88,6 @@ h3 {
   line-height: 60px;
 }
 
+.bankSwitch:disabled {
+  color: blue !important;
+}

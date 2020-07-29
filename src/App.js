@@ -7,8 +7,9 @@ import VolumeUp from '@material-ui/icons/VolumeUp'
 import FormGroup from '@material-ui/core/FormGroup'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
 
-function App() {
+const App = () => {
   const [state, setState] = useState({ volume: 50, power: true, bank: false, displayText: "" })
+
   const sounds = {
     bankOneSounds: {
       Q: { url: "https://s3.amazonaws.com/freecodecamp/drums/Heater-1.mp3", name: "Heater 1" },
@@ -41,14 +42,14 @@ function App() {
   const handlePowerChange = (event) => {
     const isChecked = event.target.checked, newDisplayText = isChecked ? state.displayText : ""
     let newVolume = state.volume, newBank = state.bank
-    if(state.power && !isChecked) {
+    if (state.power && !isChecked) {
       newVolume = 0
       newBank = false
     } else {
       newVolume = 50
     }
     setState({ ...state, power: isChecked, displayText: newDisplayText, volume: newVolume, bank: newBank });
-}
+  }
 
   const handleBankChange = (event) => {
     if (state.power) {
@@ -113,6 +114,7 @@ function App() {
                   onChange={handleBankChange}
                   color="primary"
                   width="50%"
+                  className="bankSwitch"
                   inputProps={{ 'aria-label': 'primary checkbox' }}
                 />}
                 label="Bank"
